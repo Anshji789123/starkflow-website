@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
+// Google font import (for general content)
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -15,14 +16,14 @@ const fontSans = FontSans({
 
 // Custom display font for headings
 const fontHeading = localFont({
-  src: "../public/fonts/CalSans-SemiBold.woff2",
+  src: "/fonts/CalSans-SemiBold.woff2", // Corrected the font path
   variable: "--font-heading",
 })
 
 export const metadata: Metadata = {
   title: "STARKFLOW | Build Top Teams with Global Talent",
   description: "Hire elite professionals from Latin America and Asia, ready to make an impact on your projects.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -44,7 +45,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
