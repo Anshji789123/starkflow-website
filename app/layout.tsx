@@ -16,9 +16,10 @@ const fontSans = FontSans({
 
 // Custom display font for headings
 const fontHeading = localFont({
-  src: "/fonts/CalSans-SemiBold.woff2", // Corrected the font path
+  src: "../public/fonts/CalSans-SemiBold.woff2",  // <-- This line is incorrect
   variable: "--font-heading",
 })
+
 
 export const metadata: Metadata = {
   title: "STARKFLOW | Build Top Teams with Global Talent",
